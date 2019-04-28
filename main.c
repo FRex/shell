@@ -27,7 +27,7 @@ static size_t skipline()
     return ret;
 }
 
-static int getline()
+static int mygetline()
 {
     size_t linelen;
 
@@ -156,7 +156,7 @@ int main(void)
 {
     while(1)
     {
-        if(getline())
+        if(mygetline())
         {
             runcmd();
         }
